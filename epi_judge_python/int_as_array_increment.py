@@ -12,7 +12,8 @@ def plus_one(A: List[int]) -> List[int]:
         else:
             carry = 0
     if carry == 1:
-        A.insert(0, 1)
+        A[0] = 1
+        A.append(0)
     return A
 
 
